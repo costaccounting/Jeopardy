@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Jeopardy</title>
+<link rel="stylesheet" type="text/css" href="css/login.css">
+</head>
+<body>
+	<h1>Welcome to Sheridan Jeopardy</h1>
+	<div class="background"></div>
+	<div class="menu">
+		<div class="main">
+			<p>Login and Play</p>
+			<form class="container" method="POST" action="LoginServlet">
+				<input type="text" name="uid" placeholder="Enter User Name"><br>
+				<input type="password" name="pass" placeholder="Enter Password"><br>
+				<input type="Submit" value="Login">
+			</form>
+		</div>
+		<div class="main">
+			<p>Play as a Guest</p>
+			<form class="container" method="GET" action="LoginServlet">
+				<input type="text" name="name" placeholder="Enter Your Name"><br>
+				<input type="Submit" value="Start Game">
+			</form>
+		</div>
+
+	</div>
+
+	<script>
+function load(var name) {
+    var popup = document.getElementById(name);
+    popup.classList.toggle("show");
+}
+</script>
+</body>
+</html>

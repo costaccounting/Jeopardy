@@ -1,0 +1,88 @@
+body {
+	text-align: center;
+	background-image: url("../img/jp.png");
+	background-repeat: repeat;
+	background-attachment: fixed;
+	background-position: 50% 50%;
+	background-color: #cccccc;
+	margin: auto;
+	padding: auto;
+}
+
+h1 {
+	text-color: dark blue;
+	text-shadow: .05em .05em blue;
+	background-color: rgba(255, 255, 255, 0.4);
+}
+
+.menu {
+	width: 90%;
+	text-align: center;
+}
+
+.main {
+	position: relative;
+	display: inline-block;
+	width: 49%;
+}
+
+.container {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px .05em 1em 0px rgba(0, 0, 0, 0.2);
+	padding: 12px 16px;
+	z-index: 1;
+}
+
+.main:hover .container {
+	display: block;
+}
+
+p {
+	width: 100%;
+	background: rgba(103, 10, 161, 0.75);
+	border-radius: 0.2em;
+	height: 2.5em;
+	font-size: 1.25em;
+	font-weight: bold;
+}
+
+.main p {
+	vertical-align: 50%;
+}
+
+.container {
+	
+}
+
+.main {
+	margin: auto;
+	padding: auto;
+}
+
+input[type=text], input[type=password] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	margin: auto;
+	padding: auto;
+}
+
+button {
+	background-color: #4CAF50;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+}
+
+button:hover {
+	opacity: 0.8;
+}
